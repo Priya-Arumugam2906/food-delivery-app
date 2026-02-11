@@ -1,0 +1,111 @@
+.cart{
+    margin-top: 100px;
+
+}
+.cart-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: var(--text-light);
+    font-size: max(0.8vw,12px);
+}
+.cart-items-item{
+    margin: 10px 0;
+   color:var(--text);
+}
+.cart-items-item img{
+    width: 50px;
+}
+.cart hr{
+    height: 1px;
+    background:rgba(255,255,255,.08);
+    border: none;
+}
+.cart-items-item .cross{
+    cursor: pointer;
+}
+.cart-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap:max(12vw,20px);
+    font-size: 18px;
+}
+.cart-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background:var(--card-soft);
+    padding:20px;
+    border-radius:10px;
+   
+
+    
+}
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    color:#cbd5e1;
+}
+.cart-total hr{
+    margin: 10px 0;
+}
+.cart-total button{
+    border: none;
+    color: white;
+    background-color: var(--accent);
+    width: max(15vw,200px);
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.cart-promocode{
+    flex: 1;
+}
+.cart-promocode p{
+    color: var(--text-light)
+}
+.cart-promocode-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     background:var(--card-soft);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius: 4px;
+    
+    
+}
+.cart-promocode-input input{
+     color:white;
+    border:none;
+    outline: none;
+    background: transparent;
+    padding-left: 10px;
+    font-size: 18px;
+
+}
+.cart-promocode-input input::placeholder{
+    color:#9ca3af;
+}
+.cart-promocode-input button{
+    width: max(10vw,150px);
+    padding: 12px 5px;
+    background:#f97316;
+border:none;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+/*---------------media queries--------------------*/
+@media (max-width:750px){
+    .cart-bottom{
+    flex-direction: column-reverse;
+}
+.cart-promocode{
+    justify-content: start;
+}
+}
