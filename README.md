@@ -1,4 +1,4 @@
-Food Delivery App 🍔
+Food Delivery App 
 
 This is a responsive Food Delivery web application built using React JS. The project allows users to browse food items, add them to the cart, and place orders through a simple and interactive interface.
 
